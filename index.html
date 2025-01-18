@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake and Ladders - Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Snake and Ladders</h1>
+        <nav>
+            <ul>
+                <li><a href="D:\apex\form.html">Game Form</a></li>
+                <li><a href="D:\apex\SnakeLaders.gif">Image Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Image Section -->
+    
+
+    <main class="background-section">
+        <!-- Game Form Section -->
+        <section id="form">
+            <h2>Player Registration</h2>
+            <form id="gameForm">
+                <label for="playerName">Player Name:</label>
+                <input type="text" id="playerName" name="playerName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="playerColor">Player Color:</label>
+                <input type="color" id="playerColor" name="playerColor">
+                
+                <button type="submit">Register</button>
+            </form>
+            <p id="formMessage" class="hidden"></p>
+        </section>
+    
+        <!-- Image Gallery Section -->
+        <section id="gallery">
+            <h2>Dynamic Image Gallery</h2>
+            <input type="text" id="imageUrl" placeholder="Enter Image URL">
+            <button id="addImageButton">Add Image</button>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; Akhila Yadav Kalla. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</html>

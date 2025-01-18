@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Transparent Background Section */
+.background-section {
+    background-image: url('SnakeLaders.gif'); /* Path to the GIF */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    min-height: calc(100vh - 160px); /* Adjust based on header and footer height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* For overlay */
+}
+
+/* Optional: Add an overlay for better text readability */
+.background-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    z-index: 1;
+}
+
+section {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    border-top: 3px solid #0056b3;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
